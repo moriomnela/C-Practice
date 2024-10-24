@@ -40,22 +40,18 @@
 }*/
 #include <stdio.h>
 
-// Function to check if a number is prime
 int isPrime(int n) {
     if (n <= 1)
-        return 0;  // Numbers <= 1 are not prime
-
-    for (int i = 2; i * i <= n; i++) {  // Check divisibility up to sqrt(n)
+        return 0;
+    for (int i = 2; i * i <= n; i++) {
         if (n % i == 0)
-            return 0;  // If divisible, it's not prime
+            return 0;
     }
-    return 1;  // If no divisors found, it's prime
+    return 1;
 }
-
 int main() {
     int start, end;
 
-    // Input the range from the user
     printf("Enter the start of the range: ");
     scanf("%d", &start);
     printf("Enter the end of the range: ");
@@ -63,14 +59,12 @@ int main() {
 
     printf("Prime numbers between %d and %d are:\n", start, end);
 
-    // Loop through the range to check each number
     for (int n = start; n <= end; n++) {
         if (isPrime(n)) {
-            printf("%d ", n);  // Print the prime number
+            printf("%d ", n);
         }
     }
-
-    printf("\n");  // Newline after printing all primes
+    printf("\n");
     return 0;
 }
 
