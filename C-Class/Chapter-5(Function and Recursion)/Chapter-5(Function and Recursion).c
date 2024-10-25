@@ -84,13 +84,36 @@ void calculatePrice(float value){
     printf("Final price is:%f",value);
 }*/
 
-void calculateprice(float value);
+/*void calculateprice(float value);
 int main(){
     int n = 4;
     printf("%f",pow(n,2));
     return 0;
+}*/
+#include <stdio.h>
 
+float squareArea(float side);  // Consistent with function definition
+float circleArea(float rad);   // Function prototype
+float rectangleArea(float a, float b);  // Function prototype
 
+int main() {
+    float a = 5.0;
+    float b = 10.0;
+
+    printf("Area is: %f\n", rectangleArea(a, b));  // Call the correct function
+    return 0;
+}
+
+float squareArea(float side) {
+    return side * side;
+}
+
+float circleArea(float rad) {
+    return 3.14 * rad * rad;
+}
+
+float rectangleArea(float a, float b) {
+    return a * b;
 }
 
 
