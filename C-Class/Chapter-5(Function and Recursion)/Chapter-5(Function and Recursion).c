@@ -90,7 +90,7 @@ int main(){
     printf("%f",pow(n,2));
     return 0;
 }*/
-#include <stdio.h>
+/*#include <stdio.h>
 
 float squareArea(float side);  // Consistent with function definition
 float circleArea(float rad);   // Function prototype
@@ -115,6 +115,30 @@ float circleArea(float rad) {
 float rectangleArea(float a, float b) {
     return a * b;
 }
+*/
+
+//Recursion
+void printHW(int count);
+int main(){
+    printHW(5);
+  return 0;
+}
+void printHW(int count){
+   if(count == 0){
+    return;
+   }
+   printf("Hello World\n");
+   printHW(count-1);
+
+}
+
+
+
+
+
+
+
+
 
 
 
