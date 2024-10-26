@@ -118,7 +118,7 @@ float rectangleArea(float a, float b) {
 */
 
 //Recursion
-void printHW(int count);
+/*void printHW(int count);
 int main(){
     printHW(5);
   return 0;
@@ -129,7 +129,33 @@ void printHW(int count){
    }
    printf("Hello World\n");
    printHW(count-1);
+}*/
 
+/*int sum(int n);
+int main(){
+   printf("sum is:%d",sum(5));
+   return 0;
+}
+int sum(int n){
+    if(n==1){
+       return 1;
+       };
+ int sumNm1=sum(n-1);
+ int sumN=sumNm1+n;
+ return sumN;
+}*/
+int fact(int n);
+int main(){
+  printf("Factorial is: %d",fact(5));
+}
+
+int fact(int n){
+    if(n==0){
+        return 1;
+    }
+  int factNm1=fact(n-1);
+  int factN=factNm1*n;
+  return factN;
 }
 
 
