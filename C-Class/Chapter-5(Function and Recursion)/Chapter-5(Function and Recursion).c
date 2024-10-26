@@ -144,7 +144,7 @@ int sum(int n){
  int sumN=sumNm1+n;
  return sumN;
 }*/
-int fact(int n);
+/*int fact(int n);
 int main(){
   printf("Factorial is: %d",fact(5));
 }
@@ -157,7 +157,25 @@ int fact(int n){
   int factN=factNm1*n;
   return factN;
 }
+*/
 
+int fib(int n);
+int main(){
+   fib(6);
+   return 0;
+}
+int fib(int n){
+    if(n==0){
+        return 0;
+    }if(n==1){
+       return 1;
+    }
+  int fibNm1=fib(n-1);
+  int fibNm2=fib(n-2);
+  int fibN=fibNm1+fibNm2;
+  printf("fib of : %d\n",n,fibN);
+return fibN;
+}
 
 
 
