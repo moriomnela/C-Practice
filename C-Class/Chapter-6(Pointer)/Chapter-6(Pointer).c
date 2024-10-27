@@ -30,7 +30,7 @@ void square(int n){
    printf("square = %d\n",n);
 }*/
 
-void swap(int a, int b);
+/*void swap(int a, int b);
 void _swap(int* a, int *b);
 int main() {
 int x = 3, y = 5;
@@ -51,4 +51,16 @@ void _swap(int* a, int* b) {
 int t = *a;
 *a = *b;
 *b = *a;
+}*/
+
+
+void printAddress(int n);
+int main(){
+  int n = 4;
+  printAddress(n);
+  printf("%u\n",&n);
+  return 0;
+}
+void printAddress(int n){
+   printf("%u\n",&n);
 }
