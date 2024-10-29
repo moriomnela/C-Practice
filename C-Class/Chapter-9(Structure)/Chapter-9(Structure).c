@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<string.h>
-
 struct student{
    int roll;
    float cgpa;
@@ -11,8 +10,27 @@ int main(){
    s1.roll=02;
    s1.cgpa=9.5;
    strcpy(s1.name, "Nela");
-   printf("Student name = %s\n",s1.name);
-   printf("Student roll = %d\n",s1.roll);
+   printf("Student Name = %s\n",s1.name);
+   printf("Student Roll = %d\n",s1.roll);
    printf("Student CGPA = %f\n",s1.cgpa);
+   printf("\n");
+   struct student s2;
+   s2.roll = 03;
+   s2.cgpa = 3.55;
+   strcpy(s2.name,"Rifat");
 
+   printf("Student Name: %s\n",s2.name);
+   printf("Student Roll: %d\n",s2.roll);
+   printf("Student CGPA: %f\n",s2.cgpa);
+   printf("\n");
+   struct student s3;
+   s3.roll = 04;
+   s3.cgpa = 3.99;
+   strcpy(s3.name,"Raju");
+
+   printf("Student Name: %s\n",s3.name);
+   printf("Student Roll: %d\n",s3.roll);
+   printf("Student CGPA: %f\n",s3.cgpa);
 }
+
+
