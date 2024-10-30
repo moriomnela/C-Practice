@@ -1,4 +1,4 @@
-#include<stdio.h>
+/*#include<stdio.h>
 #include<string.h>
 struct student{
    int roll;
@@ -31,6 +31,33 @@ int main(){
    printf("Student Name: %s\n",s3.name);
    printf("Student Roll: %d\n",s3.roll);
    printf("Student CGPA: %f\n",s3.cgpa);
+}*/
+#include<stdio.h>
+#include<string.h>
+
+struct student{
+    int roll;
+    float cgpa;
+    char name[100];
+
+};
+int main(){
+   struct student ece[100];
+   ece[0].roll=1234;
+   ece[0].cgpa=7.9;
+   strcpy(ece[0].name,"Nela");
+   printf("Name : %s\n",ece[0].name);
+   printf("Roll : %d\n",ece[0].roll);
+   printf("CGPA : %f\n",ece[0].cgpa);
+
+return 0;
 }
+
+
+
+
+
+
+
 
 
