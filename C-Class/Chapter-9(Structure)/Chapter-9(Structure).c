@@ -65,7 +65,7 @@ int main(){
   printf("Student cgpa: %f\n",s1.cgpa);
 }*/
 //Pointers to Structures
-#include<stdio.h>
+/*#include<stdio.h>
 #include<string.h>
 struct student{
       char name[100];
@@ -78,8 +78,21 @@ int main(){
 
    struct student *ptr = &s1;
    printf("Student Name: %s\n",(*ptr).name);
+}*/
+#include<stdio.h>
+#include<string.h>
+struct student{
+      char name[100];
+      int roll;
+      float cgpa;
+   };
+int main(){
+   struct student s1 = {"Nela",1234,3.78};
+   struct student *ptr = &s1;
 
-
+   printf("Student->Name: %s\n",ptr->name);
+   printf("Student->Roll: %d\n",ptr->roll);
+   printf("Student->CGPA: %f\n",ptr->cgpa);
 }
 
 
