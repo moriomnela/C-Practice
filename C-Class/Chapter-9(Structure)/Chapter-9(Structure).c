@@ -79,7 +79,7 @@ int main(){
    struct student *ptr = &s1;
    printf("Student Name: %s\n",(*ptr).name);
 }*/
-#include<stdio.h>
+/*#include<stdio.h>
 #include<string.h>
 struct student{
       char name[100];
@@ -93,7 +93,30 @@ int main(){
    printf("Student->Name: %s\n",ptr->name);
    printf("Student->Roll: %d\n",ptr->roll);
    printf("Student->CGPA: %f\n",ptr->cgpa);
+}*/
+
+#include<stdio.h>
+#include<string.h>
+struct student{
+      char name[100];
+      int roll;
+      float cgpa;
+   };
+   void printinfo(struct student s1);
+int main(){
+   struct student s1 = {"Nela",1234,3.78};
+   printinfo(s1);
+   //struct student *ptr = &s1;
+
 }
+ void printinfo(struct student s1){
+     printf("Student Information:\n");
+   printf("Student.Name: %s\n",s1.name);
+   printf("Student.Roll: %d\n",s1.roll);
+   printf("Student.CGPA: %f\n",s1.cgpa);
+ };
+
+
 
 
 
