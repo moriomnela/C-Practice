@@ -95,7 +95,7 @@ int main(){
    printf("Student->CGPA: %f\n",ptr->cgpa);
 }*/
 
-#include<stdio.h>
+/*#include<stdio.h>
 #include<string.h>
 struct student{
       char name[100];
@@ -107,17 +107,26 @@ int main(){
    struct student s1 = {"Nela",1234,3.78};
    printinfo(s1);
    //struct student *ptr = &s1;
-
+    s1.roll=455;
+    printf("Student.Roll: %d\n",s1.roll);
+    return 0;
 }
  void printinfo(struct student s1){
      printf("Student Information:\n");
    printf("Student.Name: %s\n",s1.name);
    printf("Student.Roll: %d\n",s1.roll);
    printf("Student.CGPA: %f\n",s1.cgpa);
- };
+ };*/
+#include<stdio.h>
+#include<string.h>
+ typedef struct student{
+      char name[100];
+      int roll;
+      float cgpa;
+   }stu;
 
-
-
-
-
-
+int main(){
+    struct student s1;
+    stu s2;
+  return 0;
+}
