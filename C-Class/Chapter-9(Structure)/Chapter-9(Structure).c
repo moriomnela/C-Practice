@@ -38,7 +38,6 @@ struct student{
     int roll;
     float cgpa;
     char name[100];
-
 };
 int main(){
    struct student ece[100];
@@ -51,9 +50,9 @@ int main(){
 
 return 0;
 }*/
-#include<stdio.h>
+//Initializing Structures
+/*#include<stdio.h>
 #include<string.h>
-
 struct student{
    char name[100];
    int roll;
@@ -64,8 +63,24 @@ int main(){
   printf("Student name : %s\n",s1.name);
   printf("Student roll: %d\n",s1.roll);
   printf("Student cgpa: %f\n",s1.cgpa);
-}
+}*/
+//Pointers to Structures
+#include<stdio.h>
+#include<string.h>
+struct student{
+      char name[100];
+      int roll;
+      float cgpa;
+   };
+int main(){
+   struct student s1 = {"Nela",1234,3.78};
+   printf("Student Name : %s\n",s1.name);
 
+   struct student *ptr = &s1;
+   printf("Student Name: %s\n",(*ptr).name);
+
+
+}
 
 
 
